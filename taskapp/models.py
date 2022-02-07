@@ -12,7 +12,6 @@ TASK_PRIORITY = [
 
 TASK_STATUS = [
     ('Pending', 'Pending'),
-    ('Working', 'Working'),
     ('Completed', 'Completed'),
 ]
 

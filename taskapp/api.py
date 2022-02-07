@@ -35,6 +35,7 @@ class TaskResource(ModelResource):
 
 class ProfileResource(ModelResource):
     user = fields.ForeignKey(UserResource, attribute='user',null=True, full=True)
+    friends = fields.ToManyField(UserResource, attribute='friends', null=True,blank=True, full=True)
     class Meta:
         queryset = Profile.objects.all()
         resource_name = 'profile'
